@@ -1,0 +1,48 @@
+:root{
+    --accent-bg-pri:#422057ff;
+    --accent-bg-sec:#fcf951ff ;
+    --accent-txt:#ce4a7eff;
+}
+.navbar .navbar-nav .logo{
+    color: var(--accent-txt);
+}
+.navbar .navbar-nav .nav-item .nav-link:hover .link-text{
+    color:var(--accent-txt);
+}
+.navbar .navbar-nav .nav-item .nav-link:hover .fa-primary{
+    color: var(--accent-bg-pri);
+    fill: var(--accent-bg-pri);
+}
+.navbar .navbar-nav .nav-item .nav-link:hover .fa-secondary{
+    color: var(--accent-bg-sec);
+    fill: var(--accent-bg-sec);
+}
+
+.intro .social-links a{
+    background-color: var(--accent-bg-pri);
+}
+.intro .social-links a:hover{
+    background-color: var(--accent-bg-sec);
+}
+.intro .social-links a svg{
+    fill: var(--accent-bg-sec);
+}
+.intro .social-links a:hover svg{
+    fill: var(--accent-bg-pri);
+}
+
+.btn,
+.section-title h2::before,.section-title h2::after{
+    background-color:var(--accent-bg-pri);
+}
+.skills .skill .skill-item .progress .progress-in{
+    background-color:var(--accent-txt);
+}
+.education .edu .timeline .timeline-item .circle-dot,
+.education .edu .timeline::before{
+    background-color:var(--accent-bg-pri);
+}
+.interests .interest-item .interest-item-inner .interest-icon svg{
+    transform: scale(0.6);
+    fill: var(--accent-bg-pri);
+}
