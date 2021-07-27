@@ -8,7 +8,7 @@
 }
 /*Preloader*/
 .preloader{
-    background-color: #222222;
+    background-color: var(--bg-main);
     position: fixed;
     left: 0;
     top: 0;
@@ -56,22 +56,22 @@
 }
 @-webkit-keyframes spinit{
     0%{
-        -webkit-transform: rotate(0deg);
-        transform: rotate(0deg);
+	-webkit-transform: rotate(0deg);
+	transform: rotate(0deg);
     }
     100%{
-        -webkit-transform: rotate(360deg);
-        transform: rotate(360deg);
+	-webkit-transform: rotate(360deg);
+	transform: rotate(360deg);
     }
 }
 @keyframes spinit{
     0%{
-        -webkit-transform: rotate(0deg);
-        transform: rotate(0deg);
+	-webkit-transform: rotate(0deg);
+	transform: rotate(0deg);
     }
     100%{
-        -webkit-transform: rotate(360deg);
-        transform: rotate(360deg);
+	-webkit-transform: rotate(360deg);
+	transform: rotate(360deg);
     }
 }
 
@@ -85,7 +85,7 @@
     left: 0;
 }
 html {
-	background-color: var(--bg-main) !important;
+    background-color: var(--bg-main) !important;
 }
 body {
     font-family: "Fira Mono", monospace;
@@ -153,12 +153,6 @@ header {
 header .site-title a {
     text-decoration: none;
 }
-/*
-.container{
-    height: 350px;
-    width: 495px;
-}
-*/
 a{
     color: var(--green);
     text-decoration: none;
@@ -194,25 +188,25 @@ a{
     border-radius: 1px;
 }
 .centered {
-	margin: 0px auto 40px;
-	display: block;
+    margin: 0px auto 40px;
+    display: block;
 }
 @keyframes cursor {
     0% {
-        opacity: 0
+	opacity: 0
     }
     50% {
-        opacity: 1
+	opacity: 1
     }
     to {
-        opacity: 0
+	opacity: 0
     }
 }
 pre {
-	max-width: 850px;
-	overflow: scroll;
-	padding: 15px 15px;
-	font-size: 14px;
+    max-width: 850px;
+    overflow: scroll;
+    padding: 15px 15px;
+    font-size: 14px;
 }
 footer {
     position: fixed;
@@ -224,23 +218,23 @@ footer {
     padding: 5px 0;
 }
 @media screen and (max-width: 30rem) {
-  .terminal__task-bar {
-    padding-top: 0.5rem;
-  }
+    .terminal__task-bar {
+	padding-top: 0.5rem;
+    }
 }
 @media screen and (max-width: 630px) {
     body {
-        padding: 0px 40px;
+	padding: 0px 40px;
     }
 }
 @media screen and (min-width: 30rem) {
     .terminal {
-      font-size: 1.25rem;
-      line-height: 2rem;
+	font-size: 1.25rem;
+	line-height: 2rem;
     }
-  }
+}
 @media screen and (min-width: 60.5rem) {
     .terminal {
-      max-width: 60.5rem;
+	max-width: 60.5rem;
     }
-  }
+}
