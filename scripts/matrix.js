@@ -5,7 +5,27 @@ document.body.appendChild(canvas)
 canvas.width = window.innerWidth;
 canvas.height = window.innerHeight;
 
-const letters = 'ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789';
+
+function shuffleString(str)
+{
+    const arr = str.split('');
+    for (let i = arr.length - 1; i > 0; i--)
+    {
+        const j = Math.floor(Math.random() * (i + 1));
+        [arr[i], arr[j]] = [arr[j], arr[i]];
+    }
+    return arr.join('');
+}
+
+const englishLetters = shuffleString('ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789');
+const malayalamLetters = shuffleString('അഇഉഋഎഒകഖഗഘങചജടഠഡതഥദധനപഫബഭമയരലവശഷസഹളഴ');
+const hindiLetters = shuffleString('अआइईउऊऋएऐओऔकखगघङचछजझञटठडढणतथदधनपफबभमयरलवशषसहक्षत्रज्ञड़ढ़फ़य़लृळऴ');
+const greekLetters = shuffleString('ΑΒΓΔΕΖΗΘΙΚΛΜΝΞΟΠΡΣΤΥΦΧΨΩαβγδεζηθικλμνξοπρστυφχψω');
+const cyrillicLetters = shuffleString('АБВГДЕЁЖЗИЙКЛМНОПРСТУФХЦЧШЩЪЫЬЭЮЯабвгдеёжзийклмнопрстуфхцчшщъыьэюя');
+const japaneseLetters = shuffleString('あいうえおかきくけこさしすせそたちつてとなにぬねのはひふへほまみむめもやゆよらりるれろわをんがぎぐげござじずぜぞだぢづでどばびぶべぼぱぴぷぺぽ');
+const chineseLetters = shuffleString('一二三四五六七八九十零个上下左右前后内外大小高低长短好坏远近新旧多少少多');
+const letters = englishLetters + malayalamLetters + hindiLetters + greekLetters + cyrillicLetters + japaneseLetters + chineseLetters;
+
 const fontSize = 16;
 
 const columns = canvas.width / fontSize;
