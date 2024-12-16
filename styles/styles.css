@@ -79,7 +79,7 @@
 	transform: rotate(360deg);
     }
 }
-#particles-js{
+#bg-animation{
     background-color: var(--bg-main);
     position: fixed;
     width: 100%;

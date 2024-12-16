@@ -66,7 +66,7 @@ typewriter
 
 
 /* Particle JSON */
-particlesJS('particles-js',
+particlesJS('bg-animation',
 
     {
 	"particles": {
