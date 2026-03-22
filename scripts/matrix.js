@@ -52,7 +52,20 @@ function draw()
     }
 }
 
-setInterval(draw, 13);
+let lastTime = 0;
+const interval = 1000 / 30; // 30fps for the matrix effect
+
+function animate(currentTime) {
+    requestAnimationFrame(animate);
+    const deltaTime = currentTime - lastTime;
+    
+    if (deltaTime >= interval) {
+        lastTime = currentTime - (deltaTime % interval);
+        draw();
+    }
+}
+
+requestAnimationFrame(animate);
 
 window.addEventListener('resize', () => {
     canvas.width = window.innerWidth;
