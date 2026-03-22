@@ -1,4 +1,5 @@
 @import url('https://fonts.googleapis.com/css?family=Source+Code+Pro:500');
+@import url('https://fonts.googleapis.com/css2?family=Fira+Mono&display=swap');
 :root{
     --bg-main: #23232e;
     --green:#00ff00;
@@ -97,7 +98,6 @@ body {
     margin: 0 auto;
     margin-bottom: 120px;
     padding: 0px;
-    max-width: 550px;
     text-rendering: geometricPrecision;
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
@@ -119,6 +119,7 @@ body {
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
     text-rendering: optimizeLegibility;
+    max-width: 550px;
 }
 .terminal__task-bar {
     height: 2rem;
